@@ -3,7 +3,7 @@ using Amazon;
 using Amazon.SecretsManager;
 using Amazon.SecretsManager.Model;
 
-IAmazonSecretsManager secretsManager = new AmazonSecretsManagerClient(RegionEndpoint.EUWest2);
+IAmazonSecretsManager secretsManager = new AmazonSecretsManagerClient(RegionEndpoint.USWest2);
 
 var listVersionIdsRequest = new ListSecretVersionIdsRequest
 {

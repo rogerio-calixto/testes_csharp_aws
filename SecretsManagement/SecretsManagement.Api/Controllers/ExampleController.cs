@@ -7,9 +7,23 @@ namespace SecretsManagement.Api.Controllers;
 [ApiController]
 public class ExampleController : ControllerBase
 {
-    private readonly IOptionsMonitor<DatabaseSettings> _databaseSettings;
+    //private readonly IOptionsMonitor<DatabaseSettings> _databaseSettings;
 
-    public ExampleController(IOptionsMonitor<DatabaseSettings> databaseSettings)
+    //public ExampleController(IOptionsMonitor<DatabaseSettings> databaseSettings)
+    //{
+    //    _databaseSettings = databaseSettings;
+    //}
+
+    //[HttpGet("settings")]
+    //public IActionResult GetSettings()
+    //{
+    //    var settings = _databaseSettings.CurrentValue;
+    //    return Ok(settings);
+    //}
+
+    private readonly IOptionsMonitor<Settings> _databaseSettings;
+
+    public ExampleController(IOptionsMonitor<Settings> databaseSettings)
     {
         _databaseSettings = databaseSettings;
     }
